@@ -18,25 +18,61 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<main>
-  <header>
-    <!-- NAVIGATION BAR WILL GO HERE -->
-  </header>
   <!-- HOMEPAGE STARTS HERE -->
   <div id="home">
-    Hello World!
+    <h1> Name Goes Here </h1>
+    <h3> Title Goes Here </h3>
   </div>
   <!-- _____________________________________________________________________ -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="moon.png" width="55" height="55" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" id="hvr-underline-from-center">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shell.html" id="hvr-underline-from-center">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shell.html" id="hvr-underline-from-center">Photography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shell.html" id="hvr-underline-from-center">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shell.html" id="hvr-underline-from-center">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html" id="hvr-underline-from-center">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </header>
 
   <!-- ABOUT SECTION STARTS HERE -->
   <div id="about">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm">
-          BIO GOES HERE
+          <h3> About Me </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
         <div class="col-sm">
-          ARTIST STATEMENT GOES HERE
+          <h3> Artist Statement </h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div> <!-- END ROW -->
       <div class="row">
@@ -44,10 +80,10 @@
           STATS GO HERE
         </div>
         <div class="col-sm">
-          PHOTO GOES HERE (DESKTOP ONLY)
+          <img src="https://picsum.photos/200/300?image=823"> </img>
         </div>
         <div class="col-sm">
-          QUOTE GOES HERE
+          <p id="quote"> "Quote from the person would go here" - Alex </p>
         </div>
       </div> <!-- END ROW -->
     </div> <!-- END CONTAINER -->
@@ -195,7 +231,7 @@
         <div class="card-header" id="headingOne">
           <h5 class="mb-0">
             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              SECTION TITLE GOES HERE
+              Technical Skills
             </button>
           </h5>
         </div>
@@ -209,7 +245,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              SECTION TITLE GOES HERE
+              Education
             </button>
           </h5>
         </div>
@@ -223,11 +259,25 @@
         <div class="card-header" id="headingThree">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              SECTION TITLE GOES HERE
+              Experience
             </button>
           </h5>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            THIS WILL BE THE SECTION INFORMATION
+          </div>
+        </div>
+      </div> <!-- END CARD -->
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Activities
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
           <div class="card-body">
             THIS WILL BE THE SECTION INFORMATION
           </div>
@@ -263,7 +313,6 @@
     </form>
   </div> <!-- END CONTACT SECTION -->
   <!-- _____________________________________________________________________ -->
-</main>
   <footer>
     <!-- FOOTER WILL GO HERE -->
   </footer>
