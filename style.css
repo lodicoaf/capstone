@@ -9,10 +9,35 @@
 --main-font: 'Montserrat', sans-serif;
 --sub_font: 'Open Sans', sans-serif;
 }
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  background-color: var(--cream2);
+}
+
+.parallax {
+    background-image:
+    radial-gradient(circle at 100% 150%, var(--cream1) 24%, var(--cream2) 25%, var(--cream2) 28%, var(--cream1) 29%, var(--cream1) 36%, var(--cream2) 36%, var(--cream2) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, var(--cream1) 24%, var(--cream2) 25%, var(--cream2) 28%, var(--cream1) 29%, var(--cream1) 36%, var(--cream2) 36%, var(--cream2) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, var(--cream2) 10%, var(--cream1) 11%, var(--cream1) 23%, var(--cream2) 24%, var(--cream2) 30%, var(--cream1) 31%, var(--cream1) 43%, var(--cream2) 44%, var(--cream2) 50%, var(--cream1) 51%, var(--cream1) 63%, var(--cream2) 64%, var(--cream2) 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent);
+    height: 25%;
+
+    background-attachment: fixed;
+    background-size: 100px 50px;
+}
+
+
 h1,h3 {
   font-family: var(--main-font);
   font-weight: 400;
 }
+
 p {
   font-family: var(--sub_font);
   font-weight: 400;
@@ -118,13 +143,11 @@ button:hover {
   background-color: var(--blue);
   color: var(--green1);
   text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17);
 }
 #home h1 {
   padding-top: 25%;
-}
-#home h1,h3 {
-    font-weight: 300;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17);
+  font-weight: 300;
 }
 
 /* ABOUT STYLES */
@@ -145,4 +168,69 @@ button:hover {
 
 #about #quote {
   text-align: center;
+}
+
+
+/* PROJECT STYLES */
+#projects {
+  padding: 3rem 3rem 2rem 3rem;
+  color: var(--green2);
+}
+
+
+/* PHOTOGRAPHY STYLES */
+#photos {
+  padding: 3rem 3rem 2rem 3rem;
+  color: var(--green2);
+}
+
+
+/* WRITING STYLES */
+#writing {
+  padding: 3rem 3rem 2rem 3rem;
+  color: var(--green2);
+}
+
+/* RESUME STYLES */
+#resume {
+  padding: 3rem 3rem 2rem 3rem;
+  color: var(--green2);
+}
+
+/* CONTACT STYLES */
+#contact {
+  padding: 3rem 3rem 2rem 3rem;
+  color: var(--green2);
+}
+
+
+/* FOOTER STYLES */
+
+footer{
+  background-color: var(--blue);
+  border-top: 2px solid var(--green1);
+  /* box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2); */
+  padding: 0;
+  text-align: center;
+}
+footer .container-fluid{
+  padding-top: 1rem;
+}
+footer p{
+  color: var(--cream1);
+  font-family: var(--main-font);
+  font-weight: 300;
+}
+#social{
+  padding-bottom: .5rem;
+  font-size: .8rem;
+}
+#social a{
+  color: var(--cream1);
+  text-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  padding: 0 .5rem;
+}
+#social a:hover{
+  color: var(--green1);
+  text-shadow: 0 1px 5px rgba(0,0,0,0.17);
 }
