@@ -1,5 +1,5 @@
 /* GLOBAL STYLES */
-:root{
+:root {
 --cream1: #FAF4E8;
 --cream2: #FDFBF6;
 --green1: #D1F0B1;
@@ -9,149 +9,30 @@
 --main-font: 'Montserrat', sans-serif;
 --sub_font: 'Open Sans', sans-serif;
 }
-
-html{
-  background-color: var(--cream2);
+html {
   font-family: var(--main-font);
   font-size: 12pt;
   width: 100%;
 }
-body{
-  display: block;
-  background-color: var(--cream2);
-  background-image:
-  radial-gradient(circle at 100% 150%, var(--cream1) 24%, var(--cream2) 25%, var(--cream2) 28%, var(--cream1) 29%, var(--cream1) 36%, var(--cream2) 36%, var(--cream2) 40%, transparent 40%, transparent),
-  radial-gradient(circle at 0    150%, var(--cream1) 24%, var(--cream2) 25%, var(--cream2) 28%, var(--cream1) 29%, var(--cream1) 36%, var(--cream2) 36%, var(--cream2) 40%, transparent 40%, transparent),
-  radial-gradient(circle at 50%  100%, var(--cream2) 10%, var(--cream1) 11%, var(--cream1) 23%, var(--cream2) 24%, var(--cream2) 30%, var(--cream1) 31%, var(--cream1) 43%, var(--cream2) 44%, var(--cream2) 50%, var(--cream1) 51%, var(--cream1) 63%, var(--cream2) 64%, var(--cream2) 71%, transparent 71%, transparent),
-  radial-gradient(circle at 100% 50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent),
-  radial-gradient(circle at 0    50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent);
-  background-size:100px 50px;
-}
-h1,h3 {
-  font-family: var(--main-font);
-  font-weight: 300;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17);
-}
-p{
-  font-family: var(--sub_font);
-  font-weight: 400;
-  color: var(--gray);
+
+body, html {
+    height: 100%;
+    background-color: var(--cream2);
 }
 
-/* NAV BAR STYLES */
+.parallax {
+    /* The image used */
+    background-image:
+    radial-gradient(circle at 100% 150%, var(--cream1) 24%, var(--cream2) 25%, var(--cream2) 28%, var(--cream1) 29%, var(--cream1) 36%, var(--cream2) 36%, var(--cream2) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, var(--cream1) 24%, var(--cream2) 25%, var(--cream2) 28%, var(--cream1) 29%, var(--cream1) 36%, var(--cream2) 36%, var(--cream2) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, var(--cream2) 10%, var(--cream1) 11%, var(--cream1) 23%, var(--cream2) 24%, var(--cream2) 30%, var(--cream1) 31%, var(--cream1) 43%, var(--cream2) 44%, var(--cream2) 50%, var(--cream1) 51%, var(--cream1) 63%, var(--cream2) 64%, var(--cream2) 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent);
+    /* Full height */
+    height: 25%;
 
-.navbar{
-  background-color: var(--blue);
-  border-bottom: 2px solid var(--green1);
-  border-top: 2px solid var(--green1);
-  font-family: var(--main-font);
-  /* box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2); */
-  padding: .2rem 2rem;
-  text-align: center;
-}
-li{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-li,a {
-  margin-bottom: none;
-}
-.nav-link{
-  color: var(--cream1);
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding-bottom: 0;
-  margin-bottom: 1rem;
-}
-li.active a{
-  color: var(--green1);
-}
-.nav-link:hover{
-  color: var(--green1);
-}
-
-.navbar-toggler{
-  border: 1px solid var(--cream1);
-  stroke: var(--cream1);
-}
-
-button:focus {
-  outline: none;
-}
-button:hover{
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-}
-/* HAMBURGER BAR STYLES */
-.container {
-    display: inline-block;
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
-.bar{
-    width: 1.2rem;
-    height: 2px;
-    border-radius: 5px;
-    background-color: var(--cream1);
-    margin: 6px 0;
-}
-
-/* Underline From Center */
-
-#hvr-underline-from-center {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  overflow: hidden;
-}
-#hvr-underline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  background: var(--green1);
-  height: 1px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-#hvr-underline-from-center:hover:before, #hvr-underline-from-center:focus:before, #hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
-}
-
-
-/* HOMEPAGE STYLES */
-
-#home{
-  height:700px;
-  background-color: var(--blue);
-  color: var(--green1);
-  padding: 2rem 2rem .5rem 2rem;
-  text-align: center;
-}
-
-/* ABOUT STYLES */
-#about{
-  padding: 3rem 3rem 2rem 3rem;
-  color: var(--green2);
-  background-color: var(--cream2);
-  margin-bottom: 10%;
-}
-#about img{
-  border-radius: 1rem;
-  margin-top: 10%;
-  margin-left: 35%;
-}
-#about #quote{
-  text-align: center;
-  padding-top: 2rem;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100px 50px;
 }
