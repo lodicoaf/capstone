@@ -5,7 +5,8 @@
 --green1: #D1F0B1;
 --green2: #B6CB9E;
 --gray: #414042;
---blue: #92B4A7;
+--blue1: #92B4A7;
+--blue2: #9BBAAF;
 --main-font: 'Montserrat', sans-serif;
 --sub_font: 'Open Sans', sans-serif;
 }
@@ -48,7 +49,7 @@ p {
 
 .navbar {
   width: 100%;
-  background-color: var(--blue);
+  background-color: var(--blue1);
   border-bottom: 2px solid var(--green1);
   border-top: 2px solid var(--green1);
   font-family: var(--main-font);
@@ -56,16 +57,17 @@ p {
   padding: .2rem 2rem;
   text-align: center;
 }
+
 li {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
 li,a {
   margin-bottom: none;
 }
 .nav-link {
   color: var(--cream1);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   padding-bottom: 0;
   margin-bottom: 1rem;
@@ -140,7 +142,14 @@ button:hover {
 
 #home {
   height:705px;
-  background-color: var(--blue);
+  background-color: var(--blue1);
+  background-image:
+  radial-gradient(circle at 100% 150%, var(--blue1) 24%, var(--blue2) 25%, var(--blue2) 28%, var(--blue1) 29%, var(--blue1) 36%, var(--blue2) 36%, var(--blue2) 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, var(--blue1) 24%, var(--blue2) 25%, var(--blue2) 28%, var(--blue1) 29%, var(--blue1) 36%, var(--blue2) 36%, var(--blue2) 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, var(--blue2) 10%, var(--blue1) 11%, var(--blue1) 23%, var(--blue2) 24%, var(--blue2) 30%, var(--blue1) 31%, var(--blue1) 43%, var(--blue2) 44%, var(--blue2) 50%, var(--blue1) 51%, var(--blue1) 63%, var(--blue2) 64%, var(--blue2) 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, var(--blue2) 5%, var(--blue1) 6%, var(--blue1) 15%, var(--blue2) 16%, var(--blue2) 20%, var(--blue1) 21%, var(--blue1) 30%, var(--blue2) 31%, var(--blue2) 35%, var(--blue1) 36%, var(--blue1) 45%, var(--blue2) 46%, var(--blue2) 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, var(--blue2) 5%, var(--blue1) 6%, var(--blue1) 15%, var(--blue2) 16%, var(--blue2) 20%, var(--blue1) 21%, var(--blue1) 30%, var(--blue2) 31%, var(--blue2) 35%, var(--blue1) 36%, var(--blue1) 45%, var(--blue2) 46%, var(--blue2) 49%, transparent 50%, transparent);
+  background-size: 100px 50px;;
   color: var(--green1);
   text-align: center;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17);
@@ -149,10 +158,13 @@ button:hover {
   padding-top: 25%;
   font-weight: 300;
 }
-
+#home .fa-angle-double-down {
+  color: var(--green1);
+  padding-top: 10%;
+}
 /* ABOUT STYLES */
 #about {
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
 #about .col-sm {
@@ -167,39 +179,66 @@ button:hover {
 }
 
 #about #quote {
-  text-align: center;
+  font-size: 3rem;
+  color: var(--blue1);
+  font-weight: 200;
+  padding-top: 5%;
 }
 
+/* Skills styles */
+
+.container {
+  width: 100%;
+  background-color: var(--cream2);
+  border-radius: 2rem;
+  border: 1px solid var(--blue1);
+  margin-bottom: 1rem;
+}
+
+.skills {
+  text-align: left;
+  padding-left: 20px;
+  line-height: 25px;
+  color: var(--blue1);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.html {width: 90%; background-color: var(--green1);}
+.css {width: 80%; background-color: var(--green1);}
+.js {width: 65%; background-color: var(--green1);}
+.Adobe {width: 85%; background-color: var(--green1);}
+.other {width: 40%; background-color: var(--green1);}
 
 /* PROJECT STYLES */
 #projects {
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
 
 
 /* PHOTOGRAPHY STYLES */
 #photos {
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
 
 
 /* WRITING STYLES */
 #writing {
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
 
 /* RESUME STYLES */
 #resume {
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
 
 /* CONTACT STYLES */
 #contact {
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
 
@@ -207,7 +246,7 @@ button:hover {
 /* FOOTER STYLES */
 
 footer{
-  background-color: var(--blue);
+  background-color: var(--blue1);
   border-top: 2px solid var(--green1);
   /* box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2); */
   padding: 0;
