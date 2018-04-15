@@ -28,9 +28,10 @@ body {
     radial-gradient(circle at 100% 50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent),
     radial-gradient(circle at 0    50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent);
     height: 25%;
-
     background-attachment: fixed;
     background-size: 100px 50px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1) inset;
+
 }
 
 
@@ -53,7 +54,6 @@ p {
   border-bottom: 2px solid var(--green1);
   border-top: 2px solid var(--green1);
   font-family: var(--main-font);
-  /* box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2); */
   padding: .2rem 2rem;
   text-align: center;
 }
@@ -167,6 +167,7 @@ button:hover {
   padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
+
 #about .col-sm {
   padding-bottom: 2rem;
 }
