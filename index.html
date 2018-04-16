@@ -79,24 +79,24 @@
       <div class="row">
         <div class="col-sm">
           <h5>Skills</h5>
-          <div class="container">
+          <div class="container" id="skills">
             <div class="skills html">HTML</div>
           </div>
-          <div class="container">
+          <div class="container" id="skills">
             <div class="skills css">CSS</div>
           </div>
-          <div class="container">
+          <div class="container" id="skills">
             <div class="skills js">JavaScript</div>
           </div>
-          <div class="container">
+          <div class="container" id="skills">
             <div class="skills Adobe">Adobe</div>
           </div>
-          <div class="container">
+          <div class="container" id="skills">
             <div class="skills other">Other</div>
           </div>
         </div>
         <div class="col-sm">
-          <img src="https://picsum.photos/200/300?image=823"> </img>
+          <img src="https://picsum.photos/500/700?image=823"> </img>
         </div>
         <div class="col-sm">
           <blockquote id="quote"> "Quote from the person would go here"  - Alex </blockquote>
@@ -113,31 +113,37 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1100/800?random" alt="Card image cap">
             <div class="card-body">
-              PROJECT ONE
+              <h5> Project Title </h5>
+              <p> Subtitle for Project </p>
+              <button type="fa-linkedin" class="btn btn-primary" id="sub_button">View</button>
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1100/800?random" alt="Card image cap">
             <div class="card-body">
-              PROJECT TWO
+              <h5> Project Title </h5>
+              <p> Subtitle for Project </p>
+              <button type="fa-linkedin" class="btn btn-primary" id="sub_button">View</button>
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card text-center">
+            <img class="card-img-top" src="https://picsum.photos/1100/800?random" alt="Card image cap">
             <div class="card-body">
-              PROJECT THREE
+              <h5> Project Title </h5>
+              <p> Subtitle for Project </p>
+              <button type="fa-linkedin" class="btn btn-primary" id="sub_button">View</button>
             </div>
           </div> <!-- END CARD -->
         </div>
       </div> <!-- END ROW -->
-      <button type="submit" class="btn btn-primary">Load More</button>
+      <button type="submit" class="btn btn-primary" id="main_button">Load More</button>
     </div> <!-- END CONTAINER -->
   </div> <!-- END PROJECTS SECTION -->
 <!-- _____________________________________________________________________ -->
@@ -150,25 +156,25 @@
       <div class="row">
         <div class="col-sm">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img" src="https://picsum.photos/2100/1100?random" alt="Card image cap">
             <div class="card-body">
-              PHOTO ONE
+              <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img" src="https://picsum.photos/2100/1100?random" alt="Card image cap">
             <div class="card-body">
-              PHOTO TWO
+              <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img" src="https://picsum.photos/2100/1100?random" alt="Card image cap">
             <div class="card-body">
-              PHOTO THREE
+              <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
           </div> <!-- END CARD -->
         </div>
@@ -176,30 +182,30 @@
       <div class="row">
         <div class="col-sm">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img" src="https://picsum.photos/2100/1100?random" alt="Card image cap">
             <div class="card-body">
-              PHOTO FOUR
+              <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img" src="https://picsum.photos/2100/1100?random" alt="Card image cap">
             <div class="card-body">
-              PHOTO FIVE
+              <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img" src="https://picsum.photos/2100/1100?random" alt="Card image cap">
             <div class="card-body">
-              PHOTO SIX
+              <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
           </div> <!-- END CARD -->
         </div>
       </div> <!-- END ROW -->
-      <button type="submit" class="btn btn-primary">Load More</button>
+      <button type="submit" class="btn btn-primary" id="main_button">Load More</button>
     </div> <!-- END CONTAINER -->
   </div> <!-- END PHOTOGRAPY SECTION -->
   <!-- _____________________________________________________________________ -->
@@ -213,15 +219,20 @@
         <div class="col-sm">
           <div class="card">
             <div class="card-body">
-              WRITING ONE
+              <h5> Title for Writing Piece </h5>
+              <p style="text-align:left;"> Subtitle for Writing Piece <span style="float:right;">Date</span></p>
+              <p> This is where the short description of the piece would go. To get the reader to click and read more </p>
+              <button type="fa-linkedin" class="btn btn-primary" id="sub_button">View</button>
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
             <div class="card-body">
-              WRITING TWO
-            </div>
+              <h5> Title for Writing Piece </h5>
+              <p style="text-align:left;"> Subtitle for Writing Piece <span style="float:right;">Date</span></p>
+              <p> This is where the short description of the piece would go. To get the reader to click and read more </p>
+              <button type="fa-linkedin" class="btn btn-primary" id="sub_button">View</button>            </div>
           </div> <!-- END CARD -->
         </div>
       </div> <!-- END ROW -->
@@ -229,19 +240,23 @@
         <div class="col-sm">
           <div class="card">
             <div class="card-body">
-              WRITING THREE
-            </div>
+              <h5> Title for Writing Piece </h5>
+              <p style="text-align:left;"> Subtitle for Writing Piece <span style="float:right;">Date</span></p>
+              <p> This is where the short description of the piece would go. To get the reader to click and read more </p>
+              <button type="fa-linkedin" class="btn btn-primary" id="sub_button">View</button>            </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
             <div class="card-body">
-              WRITING FOUR
-            </div>
+              <h5> Title for Writing Piece </h5>
+              <p style="text-align:left;"> Subtitle for Writing Piece <span style="float:right;">Date</span></p>
+              <p> This is where the short description of the piece would go. To get the reader to click and read more </p>
+              <button type="fa-linkedin" class="btn btn-primary" id="sub_button">View</button>            </div>
           </div> <!-- END CARD -->
         </div>
       </div> <!-- END ROW -->
-      <button type="submit" class="btn btn-primary">Load More</button>
+      <button type="submit" class="btn btn-primary" id="main_button">Load More</button>
     </div> <!-- END CONTAINER -->
   </div> <!-- END WRITING SECTION -->
   <!-- _____________________________________________________________________ -->
@@ -308,7 +323,7 @@
         </div>
       </div> <!-- END CARD -->
     </div> <!-- END ACCORDION -->
-    <button type="btn-link" class="btn btn-primary">Download</button>
+    <button type="btn-link" class="btn btn-primary" id="main_button">Download</button>
   </div> <!-- END RESUME SECTION -->
   <!-- _____________________________________________________________________ -->
 <div class="parallax"></div>
@@ -335,7 +350,7 @@
         <label>Comments</label>
         <textarea type="text" class="form-control" name="Comments" placeholder="Enter comments here."></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" id="main_button">Submit</button>
     </form>
   </div> <!-- END CONTACT SECTION -->
   <!-- _____________________________________________________________________ -->

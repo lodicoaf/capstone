@@ -188,7 +188,7 @@ button:hover {
 
 /* Skills styles */
 
-.container {
+#skills {
   width: 100%;
   background-color: var(--cream2);
   border-radius: 2rem;
@@ -216,25 +216,63 @@ button:hover {
   padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
-
+#projects .card{
+  background-color: var(--cream2);
+  border: 3px solid var(--green2);
+  border-radius: .5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+}
+#projects .card-img-top {
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+/* BUTTON STYLES */
+#main_button {
+  border: 3px solid var(--blue1);
+  color: var(--blue1);
+  background-color: var(--cream2);
+}
+#sub_button {
+  border: 2px solid var(--blue1);
+  border-radius: 25px;
+  color: var(--blue1);
+  background-color: var(--cream2);
+}
 
 /* PHOTOGRAPHY STYLES */
 #photos {
   padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
 }
-
-
+#photos .card{
+  background-color: var(--cream2);
+  border: none;
+  box-shadow: none;
+}
+#photos .card-img {
+  border-radius: .5rem;
+}
 /* WRITING STYLES */
 #writing {
   padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
+}
+#writing .card{
+  background-color: var(--cream2);
+  border: 3px solid var(--green2);
+  border-radius: .5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
 }
 
 /* RESUME STYLES */
 #resume {
   padding: 6rem 3rem 2rem 3rem;
   color: var(--green2);
+}
+
+#resume .card{
+  background-color: var(--cream2);
 }
 
 /* CONTACT STYLES */
