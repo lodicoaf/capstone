@@ -286,7 +286,8 @@ button:hover {
   position: fixed;
   right: 5%;
   bottom: 1em;
-  z-index: 999
+  z-index: 999;
+  display: none;
 }
 .top-button {
   font-size: 200%;
