@@ -11,7 +11,7 @@ $(window).scroll(function(){
 //* Navbar showing (requires jQuery and display:none in your css)
 $(document).ready(function(){
 $(window).scroll(function(){
-  if ($(this).scrollTop() > 500) {
+  if ($(this).scrollTop() > 300) {
     $('.navbar').fadeIn();
   } else {
     $('.navbar').fadeOut();
