@@ -2,6 +2,7 @@
 :root {
 --cream1: #FAF4E8;
 --cream2: #FDFBF6;
+--cream_back: rgba(253,251,246,.5);
 --green1: #D1F0B1;
 --green2: #B6CB9E;
 --gray: #414042;
@@ -27,7 +28,6 @@ body {
     radial-gradient(circle at 50%  100%, var(--cream2) 10%, var(--cream1) 11%, var(--cream1) 23%, var(--cream2) 24%, var(--cream2) 30%, var(--cream1) 31%, var(--cream1) 43%, var(--cream2) 44%, var(--cream2) 50%, var(--cream1) 51%, var(--cream1) 63%, var(--cream2) 64%, var(--cream2) 71%, transparent 71%, transparent),
     radial-gradient(circle at 100% 50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent),
     radial-gradient(circle at 0    50%, var(--cream2) 5%, var(--cream1) 6%, var(--cream1) 15%, var(--cream2) 16%, var(--cream2) 20%, var(--cream1) 21%, var(--cream1) 30%, var(--cream2) 31%, var(--cream2) 35%, var(--cream1) 36%, var(--cream1) 45%, var(--cream2) 46%, var(--cream2) 49%, transparent 50%, transparent);
-    height: 25%;
     background-attachment: fixed;
     background-size: 100px 50px;
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1) inset;
@@ -141,7 +141,7 @@ button:hover {
 /* HOMEPAGE STYLES */
 
 #home {
-  height:705px;
+  height:100%;
   background-color: var(--blue1);
   background-image:
   radial-gradient(circle at 100% 150%, var(--blue1) 24%, var(--blue2) 25%, var(--blue2) 28%, var(--blue1) 29%, var(--blue1) 36%, var(--blue2) 36%, var(--blue2) 40%, transparent 40%, transparent),
@@ -164,8 +164,11 @@ button:hover {
 }
 /* ABOUT STYLES */
 #about {
-  padding: 6rem 3rem 2rem 3rem;
+  background-color: var(--cream_back);
+  padding: 3rem 3rem 2rem 3rem;
+  margin-bottom: 10%;
   color: var(--green2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 #about .col-sm {
@@ -213,8 +216,11 @@ button:hover {
 
 /* PROJECT STYLES */
 #projects {
-  padding: 6rem 3rem 2rem 3rem;
+  background-color: var(--cream_back);
+  padding: 3rem 3rem 2rem 3rem;
+  margin-bottom: 10%;
   color: var(--green2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05),0 -5px 10px rgba(0, 0, 0, 0.05);
 }
 #projects .card{
   background-color: var(--cream2);
@@ -242,8 +248,11 @@ button:hover {
 
 /* PHOTOGRAPHY STYLES */
 #photos {
-  padding: 6rem 3rem 2rem 3rem;
+  background-color: var(--cream_back);
+  padding: 3rem 3rem 2rem 3rem;
+  margin-bottom: 10%;
   color: var(--green2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05),0 -5px 10px rgba(0, 0, 0, 0.05);
 }
 #photos .card{
   background-color: var(--cream2);
@@ -255,8 +264,11 @@ button:hover {
 }
 /* WRITING STYLES */
 #writing {
-  padding: 6rem 3rem 2rem 3rem;
+  background-color: var(--cream_back);
+  padding: 3rem 3rem 2rem 3rem;
+  margin-bottom: 10%;
   color: var(--green2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05),0 -5px 10px rgba(0, 0, 0, 0.05);
 }
 #writing .card{
   background-color: var(--cream2);
@@ -267,8 +279,11 @@ button:hover {
 
 /* RESUME STYLES */
 #resume {
-  padding: 6rem 3rem 2rem 3rem;
+  background-color: var(--cream_back);
+  padding: 3rem 3rem 2rem 3rem;
+  margin-bottom: 10%;
   color: var(--green2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05),0 -5px 10px rgba(0, 0, 0, 0.05);
 }
 
 #resume .card{
@@ -277,37 +292,46 @@ button:hover {
 
 /* CONTACT STYLES */
 #contact {
-  padding: 6rem 3rem 2rem 3rem;
+  background-color: var(--cream_back);
+  padding: 3rem 3rem 2rem 3rem;
   color: var(--green2);
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.05);
 }
 
 /*-- to-top button styles --*/
 .to-top {
   position: fixed;
-  right: 5%;
+  right: 2%;
   bottom: 1em;
-  z-index: 999;
+  z-index: 99999;
   display: none;
 }
 .top-button {
-  font-size: 200%;
-  background: white;
-  border: 2px solid black;
-  color: black;
-  padding: .2em .3em .15em .3em;
+  background: var(--cream2);
+  border: 2px solid var(--green2);
+  color: var(--green2);
+  padding: 1em .5em .3em .5em;
   text-decoration: none;
   border-radius: 4px;
+  text-align: center;
 }
+
+.top-button:hover {
+  text-decoration: none;
+  color: var(--cream2);
+  background: var(--green2);
+}
+
 /* FOOTER STYLES */
 
-footer{
+footer {
   background-color: var(--blue1);
   border-top: 2px solid var(--green1);
   /* box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2); */
   padding: 0;
   text-align: center;
 }
-footer .container-fluid{
+footer .container-fluid {
   padding-top: 1rem;
 }
 footer p{

@@ -8,6 +8,16 @@ $(window).scroll(function(){
   }
 });
 });
+//* Navbar showing (requires jQuery and display:none in your css)
+$(document).ready(function(){
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 500) {
+    $('.navbar').fadeIn();
+  } else {
+    $('.navbar').fadeOut();
+  }
+});
+});
 //* Animates Scrolling (requires jQuery)
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -16,7 +26,7 @@ $(function() {
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
     if (target.length) {
     $('html, body').animate({
-      scrollTop: target.offset().top
+      scrollTop: target.offset().top-50
     }, 900);
     return false;
     }
