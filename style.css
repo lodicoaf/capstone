@@ -155,12 +155,12 @@ button:hover {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17);
 }
 #home h1 {
-  padding-top: 25%;
+  padding-top: 50%;
   font-weight: 300;
 }
 #home .fa-angle-double-down {
   color: var(--green1);
-  padding-top: 10%;
+  padding-top: 40%;
 }
 /* ABOUT STYLES */
 #about {
@@ -174,6 +174,11 @@ button:hover {
 #about .col-sm {
   padding-bottom: 2rem;
 }
+
+#about p {
+  padding-top: 1rem;
+}
+
 #about img {
   border-radius: 100%;
   display: block;
@@ -226,6 +231,7 @@ button:hover {
   border: 3px solid var(--green2);
   border-radius: .5rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+  margin-top: 2rem;
 }
 #projects .card-img-top {
     width: 100%;
@@ -237,6 +243,7 @@ button:hover {
   border: 3px solid var(--blue1);
   color: var(--blue1);
   background-color: var(--cream2);
+  margin-top: 3rem;
 }
 #sub_button {
   border: 2px solid var(--blue1);
@@ -257,6 +264,7 @@ button:hover {
   background-color: transparent;
   border: none;
   box-shadow: none;
+  margin-top: 2rem;
 }
 #photos .card-img {
   border-radius: .5rem;
@@ -274,6 +282,7 @@ button:hover {
   border: 3px solid var(--green2);
   border-radius: .5rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+  margin: 3rem 0;
 }
 
 /* RESUME STYLES */
@@ -285,8 +294,27 @@ button:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05),0 -5px 10px rgba(0, 0, 0, 0.05);
 }
 
+#accordion {
+  margin-top: 2rem;
+}
+
 #resume .card{
-  background-color: var(--cream2);
+  background-color: transparent;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+#resume .card-header {
+  text-align: center;
+  border-bottom: none;
+}
+
+#resume .accord_res {
+  text-decoration: none;
+  color: var(--green2);
+}
+
+#resume .accord_res:hover {
+  box-shadow: none;
 }
 
 /* CONTACT STYLES */
@@ -351,3 +379,22 @@ footer p{
   color: var(--green1);
   text-shadow: 0 1px 5px rgba(0,0,0,0.17);
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media(min-width: 768px) {
+  #home h1 {
+    padding-top: 30%;
+  }
+  #home .fa-angle-double-down {
+    padding-top: 20%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media(min-width: 992px) {
+  #home h1 {
+    padding-top: 25%;
+  }
+  #home .fa-angle-double-down {
+    padding-top: 10%;
+  }
+ }
