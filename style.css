@@ -135,6 +135,15 @@ button:hover {
   left: 0;
   right: 0;
 }
+/* MODAL STYLES */
+.modal-content {
+  background-color: var(--cream2);
+  border-color: var(--green1);
+}
+.close:hover {
+  box-shadow: none;
+  color: var(--blue1);
+}
 
 /* HOMEPAGE STYLES */
 
