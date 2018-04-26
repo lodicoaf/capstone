@@ -19,42 +19,303 @@
 </head>
 <body>
   <header>
-    <div class="row justify-content-center">
-    <a class="btn btn-primary" id="main_button" href="index.html" role="button">Back to Home</a>
+    <nav class="navbar navbar-expand-lg fixed-top a_nav">
+      <a class="navbar-brand" href="index.html">
+        <img src="pix/moon.png" width="55" height="55" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about" id="hvr-underline-from-center">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#projects" id="hvr-underline-from-center">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#photos" id="hvr-underline-from-center">Photography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#writing" id="hvr-underline-from-center">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#resume" id="hvr-underline-from-center">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact" id="hvr-underline-from-center">Contact</a>
+        </li>
+      </ul>
     </div>
+  </nav>
   </header>
   <!-- PROJECTS SECTION STARTS HERE -->
-  <div id="projects" style="box-shadow: none">
+  <div class="more_cont" id="projects" style="box-shadow: none; margin-bottom:.5rem;">
     <h3> Projects </h3>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-lg">
           <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=1080" alt="Card image cap">
+            <img class="card-img-top" src="pix/1080.jpeg" alt="Card image cap">
             <div class="card-body">
               <h5> Project Title </h5>
               <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/1080.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/1080.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/1080.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=979" alt="Card image cap">
+            <img class="card-img-top" src="pix/979.jpeg" alt="Card image cap">
             <div class="card-body">
               <h5> Project Title </h5>
               <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal2">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/979.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/979.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/979.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=940" alt="Card image cap">
+            <img class="card-img-top" src="pix/940.jpeg" alt="Card image cap">
             <div class="card-body">
               <h5> Project Title </h5>
               <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal3">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/940.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/940.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/940.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
+            </div>
+          </div> <!-- END CARD -->
+        </div>
+      </div>   <!-- END ROW -->
+      <div class="row">
+        <div class="col-sm">
+          <div class="card text-center">
+            <img class="card-img-top" src="pix/696.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5> Project Title </h5>
+              <p> Subtitle for Project </p>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal4">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/696.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/696.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/696.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
+            </div>
+          </div> <!-- END CARD -->
+        </div>
+        <div class="col-sm">
+          <div class="card text-center">
+            <img class="card-img-top" src="pix/668.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5> Project Title </h5>
+              <p> Subtitle for Project </p>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal5">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/668.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/668.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/668.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
+            </div>
+          </div> <!-- END CARD -->
+        </div>
+        <div class="col-sm">
+          <div class="card text-center">
+            <img class="card-img-top" src="pix/628.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5> Project Title </h5>
+              <p> Subtitle for Project </p>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal6">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/628.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/628.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/628.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
             </div>
           </div> <!-- END CARD -->
         </div>
@@ -62,63 +323,130 @@
       <div class="row">
         <div class="col-sm">
           <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=696" alt="Card image cap">
+            <img class="card-img-top" src="pix/605.jpeg" alt="Card image cap">
             <div class="card-body">
               <h5> Project Title </h5>
               <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal7">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/605.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/605.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/605.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=668" alt="Card image cap">
+            <img class="card-img-top" src="pix/568.jpeg" alt="Card image cap">
             <div class="card-body">
               <h5> Project Title </h5>
               <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal8">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/568.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/568.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/568.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
             </div>
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=628" alt="Card image cap">
+            <img class="card-img-top" src="pix/526.jpeg" alt="Card image cap">
             <div class="card-body">
               <h5> Project Title </h5>
               <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
-            </div>
-          </div> <!-- END CARD -->
-        </div>
-      </div> <!-- END ROW -->
-      <div class="row">
-        <div class="col-sm">
-          <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=605" alt="Card image cap">
-            <div class="card-body">
-              <h5> Project Title </h5>
-              <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
-            </div>
-          </div> <!-- END CARD -->
-        </div>
-        <div class="col-sm">
-          <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=568" alt="Card image cap">
-            <div class="card-body">
-              <h5> Project Title </h5>
-              <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
-            </div>
-          </div> <!-- END CARD -->
-        </div>
-        <div class="col-sm">
-          <div class="card text-center">
-            <img class="card-img-top" src="https://picsum.photos/1100/800?image=526" alt="Card image cap">
-            <div class="card-body">
-              <h5> Project Title </h5>
-              <p> Subtitle for Project </p>
-              <button type="fa-linkedin" class="btn" id="sub_button">View</button>
+              <button type="fa-linkedin" class="btn" id="sub_button" data-toggle="modal" data-target="#projectModal9">View</button>
+              <!-- Begin Modal -->
+              <div class="modal fade" id="projectModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img src="pix/526.jpeg">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <img src="pix/526.jpeg">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="pix/526.jpeg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <p> Information about project </p>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END MODAL -->
             </div>
           </div> <!-- END CARD -->
         </div>
@@ -154,6 +482,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- loads custom scrolling scripts AFTER jQuery -->
-  <script src="scroll.js" type="text/javascript"></script>
+  <!-- <script src="scroll.js" type="text/javascript"></script> -->
 </body>
 </html>

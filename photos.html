@@ -19,115 +19,374 @@
 </head>
 <body>
   <header>
-    <div class="row justify-content-center">
-    <a class="btn btn-primary" id="main_button" href="index.html" role="button">Back to Home</a>
+    <nav class="navbar navbar-expand-lg fixed-top a_nav">
+      <a class="navbar-brand" href="index.html">
+        <img src="pix/moon.png" width="55" height="55" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about" id="hvr-underline-from-center">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#projects" id="hvr-underline-from-center">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#photos" id="hvr-underline-from-center">Photography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#writing" id="hvr-underline-from-center">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#resume" id="hvr-underline-from-center">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact" id="hvr-underline-from-center">Contact</a>
+        </li>
+      </ul>
     </div>
+  </nav>
   </header>
   <!-- PHOTOGRAPY SECTION STARTS HERE -->
-  <div id="photos" style="box-shadow: none">
+  <div class="more_cont" id="photos" style="box-shadow: none; margin-bottom:.5rem;">
     <h3> Photography </h3>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=1011" alt="Card image cap">
+            <a data-toggle="modal" data-target="#photoModal1"> <img class="card-img" src="pix/1011.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/1011.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=1025" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal2"> <img class="card-img" src="pix/1025.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/1025.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=964" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal3"> <img class="card-img" src="pix/964.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/964.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
       </div> <!-- END ROW -->
       <div class="row">
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=861" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal4"> <img class="card-img" src="pix/861.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/861.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=789" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal5"> <img class="card-img" src="pix/789.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/789.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=718" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal6"> <img class="card-img" src="pix/718.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/718.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
       </div> <!-- END ROW -->
       <div class="row">
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=890" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal7"> <img class="card-img" src="pix/890.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/890.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=859" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal8"> <img class="card-img" src="pix/859.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/859.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=837" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal9"> <img class="card-img" src="pix/837.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/837.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
       </div> <!-- END ROW -->
       <div class="row">
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=1073" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal10"> <img class="card-img" src="pix/1073.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/1073.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=1040" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal11"> <img class="card-img" src="pix/1040.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/1040.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
         <div class="col-sm">
           <div class="card">
-            <img class="card-img" src="https://picsum.photos/2100/1100?image=821" alt="Card image cap">
+              <a data-toggle="modal" data-target="#photoModal12"> <img class="card-img" src="pix/821.jpeg" alt="Card image cap"> </a>
             <div class="card-body">
               <p style="text-align:left;"> Caption for Image <span style="float:right;">Date</span></p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="photoModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Caption</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img" src="pix/821.jpeg" alt="Card image cap">
+                  </div>
+                  <div class="modal-footer">
+                    <p> Information about image </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END MODAL -->
           </div> <!-- END CARD -->
         </div>
       </div> <!-- END ROW -->
@@ -162,6 +421,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- loads custom scrolling scripts AFTER jQuery -->
-  <script src="scroll.js" type="text/javascript"></script>
+  <!-- <script src="scroll.js" type="text/javascript"></script> -->
 </body>
 </html>

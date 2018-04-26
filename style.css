@@ -191,7 +191,7 @@ button:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  height: 75%;
 }
 
 #about #quote {
@@ -271,6 +271,7 @@ button:hover {
 .btn.foccus, .btn:focus {
   box-shadow: none;
 }
+
 /* PHOTOGRAPHY STYLES */
 #photos {
   background-color: var(--cream_back);
@@ -288,6 +289,11 @@ button:hover {
 #photos .card-img {
   border-radius: .5rem;
 }
+#photos a:hover img {
+  opacity: .5;
+  cursor: pointer;
+}
+
 /* WRITING STYLES */
 #writing {
   background-color: var(--cream_back);
@@ -363,6 +369,7 @@ button:hover {
   bottom: 1em;
   z-index: 99999;
   display: none;
+  width: 50px;
 }
 .top-button {
   background: var(--cream2);
@@ -378,6 +385,10 @@ button:hover {
   text-decoration: none;
   color: var(--cream2);
   background: var(--green2);
+}
+
+.more_cont {
+  margin-top: 4rem;
 }
 
 /* FOOTER STYLES */
