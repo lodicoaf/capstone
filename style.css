@@ -289,10 +289,27 @@ button:hover {
 #photos .card-img {
   border-radius: .5rem;
 }
-#photos a:hover img {
-  opacity: .5;
+#photos .plus:hover {
+  opacity: .7;
   cursor: pointer;
 }
+#photos .fa-plus {
+  color: var(--green1);
+}
+
+#photos .middle {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+#photos .plus:hover .middle {
+  opacity: 1;
+}
+
 
 /* WRITING STYLES */
 #writing {
