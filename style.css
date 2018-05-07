@@ -172,13 +172,13 @@ button:hover {
 /* ABOUT STYLES */
 #about {
   background-color: var(--cream_back);
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 3rem 3rem 0rem 3rem;
   margin-bottom: 10%;
   color: var(--green2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
-#about .col-sm {
+#about #top {
   padding-bottom: 2rem;
 }
 
@@ -245,6 +245,26 @@ button:hover {
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
 }
+
+/* THIS CODE IS FOR EXAMPLE SITE IMAGES... FOR ACTUAL IMAGES THE SETTINGS MAY VARY */
+
+.col-md-12 {
+  max-height: 200px; overflow: hidden;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.col-md-12 img {
+  max-height: initial;
+  width: 100%
+}
+.col-md-6 {
+  max-height: 200px; overflow: hidden;
+}
+.col-md-6 img {
+  width: 100%;
+  max-height: initial;
+}
+
 /* BUTTON STYLES */
 #main_button {
   border: 3px solid var(--blue1);
